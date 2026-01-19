@@ -1,0 +1,87 @@
+:root {
+  --color--borderLogin: #5483b3;
+  --color--background: #f3f8fb;
+  --color--textLogin: #021024;
+  --color--backgroundButton: #6fa8ff;
+  --color--links: rgb(170, 169, 169);
+  --color--linksSpan: black;
+  --fontSize--text: ;
+  --fontFamily--text: cursive;
+}
+body {
+  background-color: var(--color--background);
+  font-family: var(--fontFamily--text);
+  height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.containerLogin {
+  border-radius: 20px;
+  background-color: var(--color--background);
+  color: var(--color--textLogin);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 35px 17px;
+  gap: 20px;
+  box-shadow:
+    0 1px 10px #fdf6ec,
+    0 -1px 10px var(--color--borderLogin);
+}
+.containerText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.imgLogin {
+  width: 90px;
+}
+.tituleLogin {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+/*INPUTS*/
+.inputUsername,
+.inputPassword {
+  border: none;
+  border-radius: 15px;
+  width: 200px;
+  padding: 10px;
+  font-family: var(--fontFamily--text);
+  color: var(--color--textLogin);
+  box-shadow:
+    inset 0 1px 10px #fdf6ec,
+    inset 0 -1px 10px var(--color--borderLogin);
+}
+.inputPassword:focus,
+.inputUsername:focus {
+  outline: none;
+}
+.inputPassword:focus ::placeholder {
+  color: var(--color--textLogin);
+}
+
+.buttonLogin {
+  cursor: pointer;
+  border: none;
+  border-radius: 15px;
+  width: 220px;
+  color: var(--color--textLogin);
+  font-weight: bold;
+  font-family: var(--fontFamily--text);
+  padding: 6px;
+  background-color: var(--color--backgroundButton);
+}
+
+.containerLinks {
+  font-size: 12.5px;
+  font-weight: bold;
+  color: var(--color--links);
+}
+
+.labelLogin span {
+  color: var(--color--linksSpan);
+}
