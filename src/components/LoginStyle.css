@@ -16,6 +16,12 @@ body {
   align-items: center;
   justify-content: center;
 }
+.imgLogin,
+.tituleLogin,
+.buttonLogin,
+.containerLinks {
+  caret-color: transparent;
+}
 .containerLogin {
   border-radius: 20px;
   background-color: var(--color--background);
@@ -45,7 +51,9 @@ body {
 
 /*INPUTS*/
 .inputUsername,
-.inputPassword {
+.inputPassword,
+.inputFullname,
+.inputEmail {
   border: none;
   border-radius: 15px;
   width: 200px;
@@ -57,11 +65,10 @@ body {
     inset 0 -1px 10px var(--color--borderLogin);
 }
 .inputPassword:focus,
-.inputUsername:focus {
+.inputUsername:focus,
+.inputEmail:focus,
+.inputFullname:focus {
   outline: none;
-}
-.inputPassword:focus ::placeholder {
-  color: var(--color--textLogin);
 }
 
 .buttonLogin {
@@ -79,9 +86,17 @@ body {
 .containerLinks {
   font-size: 12.5px;
   font-weight: bold;
+}
+.linkLogin {
+  text-decoration: none;
   color: var(--color--links);
 }
 
-.labelLogin span {
+.linkLogin span {
   color: var(--color--linksSpan);
+}
+.linksForget {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
 }
