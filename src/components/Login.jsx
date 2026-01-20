@@ -3,15 +3,27 @@ import Logo from "../assets/picture-Logo.png";
 import "./LoginStyle.css";
 function Login() {
   return (
-    <div className="containerLogin">
+    <form className="containerLogin">
       <img className="imgLogin" src={Logo} alt="" />
       <div className="containerText">
         <h2 className="tituleLogin">Web Development</h2>
         <label>Made easy!</label>
       </div>
-      <input className="inputUsername" type="text" placeholder="username" />
-      <input className="inputPassword" type="password" placeholder="password" />
-      <button className="buttonLogin">Login</button>
+      <input
+        className="inputUsername"
+        type="text"
+        placeholder="username"
+        required
+      />
+      <input
+        className="inputPassword"
+        type="password"
+        placeholder="password"
+        required
+      />
+      <button className="buttonLogin" type="submit">
+        Sign In
+      </button>
       <div className="containerLinks">
         <Link className="linkLogin" to="/forgetpassword">
           Forgot password? <span>or</span>
@@ -21,7 +33,7 @@ function Login() {
           Sign Up
         </Link>
       </div>
-    </div>
+    </form>
   );
 }
 

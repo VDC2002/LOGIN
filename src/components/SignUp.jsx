@@ -20,7 +20,7 @@ function SignUp() {
         </Link>
         <Link className="linkLogin" to="/">
           {" "}
-          Login
+          Sign In
         </Link>
       </div>
     </div>
